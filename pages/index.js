@@ -19,6 +19,11 @@ export default function Home() {
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
+          <button type="button" onClick={() => {
+              throw new Error("Sentry Frontend Error");
+          }}>
+              Throw error
+          </button>
         </p>
 
         <div className={styles.grid}>
